@@ -94,7 +94,7 @@ public class App {
     private static List<MLBRoster> addRoster(MLBRoster roster, List<MLBRoster> rosters) {
         if (roster.isValid() && !rosters.contains(roster)) {
             rosters.add(new MLBRoster(roster));
-            rosters.sort(MLBRoster.PROJECTED_POINTS_DESC);
+            //rosters.sort(MLBRoster.PROJECTED_POINTS_DESC);
             while (rosters.size() > NUM_OF_BEST_ROSTERS) {
                 rosters.remove(NUM_OF_BEST_ROSTERS);
             }
